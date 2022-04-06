@@ -1,65 +1,45 @@
 <script setup>
-import LogoPDAV from '../shared/LogoPDAV.vue'
+import LogoPDAV from "../shared/LogoPDAV.vue"
 </script>
 
 <template>
-    <div class="column full-width">
-        <div>
-            <div class="row justify-center">
-                <div class="item">
-                    <LogoPDAV />
-                </div>
-            </div>
+  <div class="column full-width align-items-center">
+    <div class="item">
+      <div class="row justify-center">
+        <div class="item">
+          <LogoPDAV />
         </div>
-
-        <div>
-            <nav>
-                <div class="row">
-                    <NavItem label="Home" />
-                    <NavItem label="Sobre" />
-                    <NavItem label="Recursos" />
-                </div>
-            </nav>
-        </div>
+      </div>
     </div>
+
+    <div>
+      <nav>
+        <div class="row">
+          <NavItem label="Home" link="/" />
+          <NavItem label="Sobre" link="/about" />
+          <NavItem label="Recursos" link="/resources" />
+        </div>
+      </nav>
+    </div>
+  </div>
 </template>
 
 <script>
 const NavItem = {
-    props: ['label'],
-    template: `<div class="item">
-    <h4>{{ this.label }}</h4>
+  props: ["label", "link"],
+  template: `<div class="item">
+    <a :href="this.link" rel="noreferrer">
+      <h2 class="semi-bold">{{ this.label }}</h2>
+    </a>
   </div>`,
 }
 
 export default {
-    name: 'NavBar',
-    components: {
-        NavItem,
-    },
+  name: "NavBar",
+  components: {
+    NavItem,
+  },
 }
 </script>
 
-<style scoped>
-.column,
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-.column > .item,
-.row > .item {
-    margin: 1rem;
-}
-.column {
-    flex-direction: column;
-}
-.row {
-    flex-direction: row;
-}
-.justify-center {
-    justify-content: center;
-}
-.align-items-center {
-    align-items: center;
-}
-</style>
+<style scoped></style>

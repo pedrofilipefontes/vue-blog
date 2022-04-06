@@ -1,28 +1,39 @@
 <script setup>
-import NavBar from './components/molecules/NavBar.vue'
+import NavBar from "./components/molecules/NavBar.vue"
+import Footer from "./components/molecules/Footer.vue"
+import PostsFeed from "./components/molecules/PostsFeed.vue"
 </script>
 
 <template>
-    <header class="fixed full-vw">
-        <NavBar />
-    </header>
-    <div id="scrollable-content">
-        <main></main>
-        <footer></footer>
-    </div>
+  <header class="full-vw">
+    <NavBar />
+  </header>
+  <div id="scrollable-content">
+    <main>
+      <PostsFeed />
+    </main>
+    <footer>
+      <Footer />
+    </footer>
+  </div>
 </template>
 
 <style>
-@import './assets/base.css';
-@import './assets/common.css';
+@import "./assets/base.css";
+@import "./assets/common.css";
 
-#scrollable-content {
-    height: 100%;
-    overflow-y: scroll;
+header {
+  height: 25vh;
 }
 
-.fixed {
-    position: fixed;
-    background-color: var(--color-background);
+#scrollable-content {
+  padding: 4rem;
+  position: static;
+  height: 75vh;
+  overflow-y: scroll;
+}
+
+footer {
+  margin-top: 1.5rem;
 }
 </style>

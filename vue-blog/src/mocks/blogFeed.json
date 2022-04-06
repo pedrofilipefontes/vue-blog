@@ -1,0 +1,13 @@
+[
+  {
+    "postId": 1234,
+    "mainImage": {
+      "altText": "some-image-here",
+      "imgSrc": "https://source.unsplash.com/random"
+    },
+    "postTitle": "Wow! Have you seen that?",
+    "postSnippet": "Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'.",
+    "postTags": ["IT", "Tests", "Testing", "SomeTag"],
+    "postPublicationDate": "06/03/2022"
+  }
+]
