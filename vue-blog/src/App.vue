@@ -23,13 +23,13 @@ import PostsFeed from "./components/molecules/PostsFeed.vue"
 @import "./assets/common.css";
 
 header {
-  height: 25vh;
+  max-height: 250px;
 }
 
 #scrollable-content {
   padding: 4rem;
   position: static;
-  height: 75vh;
+  height: calc(100vh - 250px);
   overflow-y: scroll;
 }
 
