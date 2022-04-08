@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
   <a :href="`/post/id/${postId}`">
     <button class="thumb-link-btn bold">{{ label }}</button>
