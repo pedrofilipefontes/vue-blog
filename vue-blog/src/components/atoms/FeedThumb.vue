@@ -1,6 +1,5 @@
 <script setup>
 import ThumbLinkBtn from "../atoms/ThumbLinkBtn.vue"
-
 </script>
 
 <template>
@@ -18,10 +17,15 @@ import ThumbLinkBtn from "../atoms/ThumbLinkBtn.vue"
           <div>
             <div class="column">
               <div>
-                <p>Author: <span class="bold">{{ postAuthor }}</span></p>
+                <p>
+                  Author: <span class="bold">{{ postAuthor }}</span>
+                </p>
               </div>
               <div>
-                <p>Data da publicação <span class="bold">{{ postPublicationDate }}</span></p>
+                <p>
+                  Data da publicação
+                  <span class="bold">{{ postPublicationDate }}</span>
+                </p>
               </div>
             </div>
           </div>
@@ -38,13 +42,13 @@ import ThumbLinkBtn from "../atoms/ThumbLinkBtn.vue"
 export default {
   name: "FeedThumb",
   props: [
-      "postTitle",
-      "postSnippet",
-      "postAuthor",
-      "postPublicationDate",
-      "postId",
-      "imgBgStyle"
-  ]
+    "postTitle",
+    "postSnippet",
+    "postAuthor",
+    "postPublicationDate",
+    "postId",
+    "imgBgStyle",
+  ],
 }
 </script>
 

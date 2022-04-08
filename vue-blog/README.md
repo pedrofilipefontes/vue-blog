@@ -31,3 +31,4 @@ npm run build
 - https://coryrylan.com/blog/css-gap-space-with-flexbox
 - https://cssgrid-generator.netlify.app
 - https://cssgenerator.pl/box-shadow-generator/
+- https://www.vuemastery.com/blog/vue-router-a-tutorial-for-vue-3/

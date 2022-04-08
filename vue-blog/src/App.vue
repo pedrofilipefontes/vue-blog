@@ -1,7 +1,6 @@
 <script setup>
 import NavBar from "./components/molecules/NavBar.vue"
 import Footer from "./components/molecules/Footer.vue"
-import PostsFeed from "./components/molecules/PostsFeed.vue"
 </script>
 
 <template>
@@ -10,7 +9,7 @@ import PostsFeed from "./components/molecules/PostsFeed.vue"
   </header>
   <div id="scrollable-content">
     <main>
-      <PostsFeed />
+      <router-view />
     </main>
     <footer>
       <Footer />

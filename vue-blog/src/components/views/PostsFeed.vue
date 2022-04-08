@@ -10,12 +10,12 @@ import blogFeed from "../../mocks/blogFeed.json"
         <div class="column">
           <div class="item" v-for="post in blogFeed">
             <FeedThumb
-                :img-bg-style="`background-image: url('${post.mainImage.imgSrc}')`"
-                :post-author="post.postAuthor"
-                :post-id="post.postId"
-                :post-publication-date="post.postPublicationDate"
-                :post-snippet="post.postSnippet"
-                :post-title="post.postTitle"
+              :img-bg-style="`background-image: url('${post.mainImage.imgSrc}')`"
+              :post-author="post.postAuthor"
+              :post-id="post.postId"
+              :post-publication-date="post.postPublicationDate"
+              :post-snippet="post.postSnippet"
+              :post-title="post.postTitle"
             />
           </div>
         </div>
